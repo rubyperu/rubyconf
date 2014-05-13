@@ -1,0 +1,29 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #222;
+  padding: 1.5em;
+}
+
+header h1 {
+  font-size: 1em;
+  margin: 0;
+}
+
+header a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.intro {
+  background: url("/img/bg.png");
+  padding: 2em 0;
+  text-align: center;
+}
+
+.intro img {
+  width: 30%;
+}
