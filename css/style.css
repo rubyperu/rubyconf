@@ -50,7 +50,7 @@ input:checked ~ nav {
 }
 
 #intro {
-  background: url("/img/bg.png");
+  background: url("../img/bg.png") #F0F0F0;
   padding: 1.5em;
   text-align: center;
 }
