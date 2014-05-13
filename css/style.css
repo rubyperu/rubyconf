@@ -5,11 +5,14 @@ body {
 
 header {
   background: #222;
-  padding: 1.5em;
+  line-height: 2em;
+  padding: 1em;
+  overflow: hidden;
 }
 
 header h1 {
   font-size: 1em;
+  display: inline-block;
   margin: 0;
 }
 
@@ -18,12 +21,40 @@ header a {
   text-decoration: none;
 }
 
-.intro {
+#toggle {
+  display: none;
+}
+
+nav {
+  display:none;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+label {
+  color: #FFF;
+  float: right;
+  font-size: 1.5em;
+}
+
+i {
+  vertical-align: middle;
+}
+
+input:checked ~ nav {
+  display: block;
+}
+
+#intro {
   background: url("/img/bg.png");
   padding: 2em;
   text-align: center;
 }
 
-.intro img {
+#intro img {
   width: 30%;
 }
