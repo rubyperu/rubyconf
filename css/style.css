@@ -42,17 +42,13 @@ label {
   font-size: 1.5em;
 }
 
-#intro i {
-  vertical-align: middle;
-}
-
 input:checked ~ nav {
   display: block;
 }
 
 #intro {
   background: url("../img/bg.png") #F0F0F0;
-  padding: 1.5em;
+  padding: 2.5em 1.5em;
   text-align: center;
 }
 
