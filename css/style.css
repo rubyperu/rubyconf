@@ -57,23 +57,15 @@ input:checked ~ nav {
 }
 
 .action {
+  background: #D32C36;
   border-radius: 5px;
   color: white;
   display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
   text-decoration: none;
 }
 
 .action i {
   margin-right: 0.2em;
-}
-
-.action.buy {
-  background: #D32C36;
-  margin-top: 0.5em;
-  padding: 0.5em 1em;
-}
-
-.action.sponsor {
-  background: SteelBlue;
-  padding: 0.5em 1.8em;
 }
