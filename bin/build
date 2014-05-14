@@ -21,3 +21,6 @@ ruby site.rb en $output
 
 mkdir -p $output/es
 ruby site.rb es $output
+
+mkdir -p $output/pt
+ruby site.rb pt $output
