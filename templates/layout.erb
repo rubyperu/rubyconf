@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="<%= @lang %>">
+  <head>
+    <title>RubyConf Peru — 2015</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">
+          RubyConf Peru
+        </a>
+      </h1>
+      <input type="checkbox" id="toggle">
+      <label for="toggle"><i class="fa fa-bars"></i></label>
+      <nav>
+        <ul>
+          <li><a href="#location"><%= t("nav_location") %></a></li>
+          <li><a href="#speakers"><%= t("nav_speakers") %></a></li>
+          <li><a href="#sponsors"><%= t("nav_sponsors") %></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>

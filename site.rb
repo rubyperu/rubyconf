@@ -13,7 +13,7 @@ class Site
   end
 
   def generate
-    write("index.html", render("index"))
+    write("index.html", page("index"))
   end
 
   private
@@ -22,16 +22,20 @@ class Site
     File.open(output_path(file), "w") { |f| f.write(content) }
   end
 
+  def output_path(file)
+    File.join(@output, @lang, file)
+  end
+
+  def page(t)
+    render("layout") { render(t) }
+  end
+
   def render(t)
     ERB.new(template(t)).result(binding)
   end
 
   def template(t)
     File.open("templates/#{t}.erb").read
-  end
-
-  def output_path(file)
-    File.join(@output, @lang, file)
   end
 end
 
