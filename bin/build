@@ -14,10 +14,7 @@ if (! test -d $output) {
 }
 
 rm -rf $output/*
-
-cp -r index.html $output/index.html
-cp -r css $output/css
-cp -r img $output/img
+cp -r public/ $output/
 
 mkdir -p $output/en
 ruby site.rb en $output
