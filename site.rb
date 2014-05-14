@@ -36,7 +36,7 @@ class Site
 end
 
 if ARGV.length != 2
-  printf("usage: %s <lang> <output>\n", $0)
+  printf("usage: %s [en|es] output\n", $0)
   exit
 end
 
