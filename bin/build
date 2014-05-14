@@ -1,0 +1,26 @@
+#!/usr/bin/env rc
+
+# Usage: build <output>
+if (! ~ $#* 1) {
+	printf 'usage: build <output>\n'
+	exit
+}
+
+output = $1
+
+if (! test -d $output) {
+	repo = `{ git config --get remote.origin.url }
+	git clone $repo -b gh-pages $output
+}
+
+rm -rf $output/*
+
+cp -r index.html $output/index.html
+cp -r css $output/css
+cp -r img $output/img
+
+mkdir -p $output/en
+ruby site.rb en $output
+
+mkdir -p $output/es
+ruby site.rb es $output
