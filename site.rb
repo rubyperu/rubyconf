@@ -13,9 +13,7 @@ class Site
   end
 
   def generate
-    %w(index).each do |template|
-      write("index.html", render(template))
-    end
+    write("index.html", render("index"))
   end
 
   private
